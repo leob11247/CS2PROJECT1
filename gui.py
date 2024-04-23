@@ -18,3 +18,17 @@ class Gui:
         self.age_label.pack(side='left')
         self.age_input.pack(side='left', padx=5)
         self.frame_two.pack(anchor='w', padx=10, pady=10)
+
+        self.frame_three = Frame(self.window)
+        self.candidate_label = Label(self.frame_three, text='Candidates', bg='White', fg='black', font=("Arial", 25))
+        self.candidate_label.pack(side='left')
+        self.frame_three.pack()
+
+        self.frame_four = Frame(self.window)
+        self.radio_answer = IntVar()
+        self.radio_answer.set(0)
+        self.radio_jane = Radiobutton(self.frame_four, text='Jane', variable=self.radio_answer, value=1, font=("Arial", 25))
+        self.radio_John = Radiobutton(self.frame_four, text='John', variable=self.radio_answer, value=2, font=("Arial", 25))
+        self.radio_jane.pack(side='bottom')
+        self.radio_John.pack(side='bottom')
+        self.frame_four.pack()
