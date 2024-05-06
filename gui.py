@@ -95,3 +95,5 @@ class Ui_MainWindow(object):
         self.submit_button.setText(_translate("MainWindow", "Submit Vote"))
         self.detail_label.setText(_translate("MainWindow", "Please Choose One Candidate!"))
         self.results_button.setText(_translate("MainWindow", "See Results"))
+
+
